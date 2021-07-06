@@ -1,0 +1,28 @@
+import java.util.*;
+class multleftrightarray
+{
+public static void main(String args[])
+{
+int i,m,size,sum=0,add=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter array elements");
+size=sc.nextInt();
+int ar[];
+ar=new int[size];
+System.out.println("enter array elements");
+for(i=0;i<size;i++)
+{
+ar[i]=sc.nextInt();
+}
+for(i=0;i<size/2;i++)
+{
+sum=sum+ar[i];
+}
+for(i=size/2;i<size;i++)
+{
+add=add+ar[i];
+}
+m=sum*add;
+System.out.println("answer="+m);
+}
+}
